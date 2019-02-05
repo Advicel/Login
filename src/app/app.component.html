@@ -2,10 +2,23 @@
 <mat-sidenav-container>
 
 <mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <span>Vocation manager</span>
-  </mat-toolbar-row>
 
-</mat-toolbar>
+  <span>Vocation manager</span>
+
+  <button mat-button [matMenuTriggerFor]="menu" >Menu</button>
+
+  <mat-menu #menu="matMenu" >
+    <button mat-menu-item >Sign in</button>
+
+    <button mat-menu-item click="addEmployee()">
+      <span>addEmployee</span>
+    </button>
+
+    <button mat-menu-item>Exit</button>
+    </mat-menu>
+
+  </mat-toolbar>
+
 </mat-sidenav-container>
+
 <router-outlet></router-outlet>
