@@ -5,3 +5,6 @@
 .example-full-width{
     width: 100%;
 }
+.example-container{
+  height: 600px;
+}

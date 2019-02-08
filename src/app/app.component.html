@@ -8,9 +8,9 @@
   <button mat-button [matMenuTriggerFor]="menu" >Menu</button>
 
   <mat-menu #menu="matMenu" >
-    <button mat-menu-item >Sign in</button>
+    <button mat-menu-item (click)="login()">Sign in</button>
 
-    <button mat-menu-item click="addEmployee()">
+    <button mat-menu-item (click)="addEmployee()">
       <span>addEmployee</span>
     </button>
 

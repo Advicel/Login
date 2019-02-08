@@ -1,3 +1,5 @@
+<mat-drawer-container class="example-container">
+<mat-drawer mode="side" opened>
 <mat-card class="addEmployee">
   <mat-card-header>
     <div mat-card-avatar class="example-header-image"></div>
@@ -18,3 +20,8 @@
    <button mat-raised-button color="primary">Добавить</button>
  </div>
 </mat-card>
+</mat-drawer>
+<mat-card mode="side" opened>
+<app-employee-table></app-employee-table>
+</mat-card>
+</mat-drawer-container>

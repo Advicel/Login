@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
- import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MatTabsModule,
   MatCardModule,
@@ -10,18 +11,23 @@ import {
   MatSidenavModule,
   MatToolbarModule,
   MatButtonModule,
-  MatMenuModule
+  MatMenuModule,
+  MatTableModule,
+  MatExpansionModule
 } from '@angular/material';
+import { RouterModule, Routes} from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
+import { EmployeeTableComponent } from './employee-table/employee-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    MainComponent
+    MainComponent,
+    EmployeeTableComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +40,10 @@ import { MainComponent } from './main/main.component';
     MatSidenavModule,
     MatToolbarModule,
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
+    RouterModule,
+    MatTableModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
